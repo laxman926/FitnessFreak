@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+
+<body>
+  <header id="head">
+    <h1>FIT FREAK</h1>
+  </header>
+  <nav class="topnav">
+
+    <a class="active" href="index.html">Home</a>
+    <a href="bmi.html">BMI Calculator</a>
+    <a href="calorie.html">Calories Calculator</a>
+    <a href="stopwatch.html">Stop Watch</a>
+  <a href="signup.html">SignUp</a>
+
+  </nav>
+  <main>
+    <div class="slider">
+      <div class="w3-content w3-section">
+        <img class="mySlides" src="images/1.jpeg" style="width:100%" height="500px">
+        <img class="mySlides" src="images/2.jpeg" style="width:100%" height="500px">
+        <img class="mySlides" src="images/3.jpeg" style="width:100%" height="500px">
+        <img class="mySlides" src="images/4.jpeg" style="width:100%" height="500px">
+      </div>
+      <script>
+        var mineIndex = 0;
+        slides(); // call function
+        function slides() {
+          var i;
+          var a = document.getElementsByClassName("mySlides");
+          for (i = 0; i < a.length; i++) {
+            a[i].style.display = "none";
+          }
+          mineIndex++;
+          if (mineIndex > a.length) {
+            mineIndex = 1
+          }
+          a[mineIndex - 1].style.display = "block";
+          setTimeout(slides, 1700);
+        }
+      </script>
+    </div>
+    <div class="font">
+      <h3>HOW FITNESS COACHING WORKS</h3>
+      <p>The most trusted online fitness and nutrition coaching program
+        takes care of the day-to-day details—so you don’t have to.</p>
+    </div>
+    <br>
+    <h3>HEAD NUTRITION COACH</h3>
+    <p>Natalie is a Precision Nutrition Level 2 nutrition coach and certified yoga instructor. Her undergraduate degree is in Health Sciences. She’s ready to help you achieve rockstar confidence with your diet.</p>
+    <h3>FOUNDER OF FIT FREAK</h3>
+    <p>Adam is a New York Times bestselling author, award-winning writer and editor, psychology researcher, former University professor, and a life-long fitness and diet coach. While he doesn’t coach clients directly, he oversees the entire Born
+      Fitness Team</p>
+    <h3>HEAD FITNESS COACH</h3>
+    <p>BJ is a veteran exercise coach with over 9 years spent coaching in-person clients, field-tested nutrition and diet coach, former sports science lab research assistant, and a life-long lover of movement. And pie.</p>
+
+
+  </main>
+  <footer>
+  <p>Copyright &nbsp;&copy; Fitness Freak. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+body {}
+
+#wrapper {
+  width: 50%;
+  margin: auto;
+  background-color: aliceblue;
+  height: 30%;
+  border: 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  text-align: justify;
+  padding-left: 20px;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+input {
+  position: relative;
+  width: 60%;
+  height: 40px;
+  outline: none;
+  left: 20%;
+}
+
+input:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: gray 0 0 3px;
+}
+#inches{
+  margin: 10px;
+}

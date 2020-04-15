@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="css/calorie.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/calorie.js"></script>
+</head>
+<body>
+        <header id=head>
+        <h1>FIT FREAK</h1>
+    </header>
+<nav class="topnav">
+
+  <a class="active" href="index.html">Home</a>
+  <a href="bmi.html">BMI Calculator</a>
+  <a href="calorie.html">Calories Calculator</a>
+  <a href="stopwatch.html">Stop Watch</a>
+<a href="signup.html">SignUp</a>
+
+</nav>
+    <div id=wrapper>
+  <form id="form">
+    <h1>Calculation Calories</h1>
+    <input class="inp" type="text" placeholder="Name" id="name">
+    <input class="inp" type="text" placeholder="Age" id="age">
+    <input class="inp" type="text" placeholder="Weight (KG)" id="weight">
+    <input class="inp" type="text" placeholder="High (CM)" id="high">
+    <div class="flex">
+     <input type="button" class="myButton" onclick="cal()" value="GO">
+
+    </div>
+  </form>
+  <div id="result">
+
+    <h1>Hi <span id="givemename"></span></h1>
+    <p>Number of Calories you need every day is &nbsp;<span id="calories"></span></p>
+  </div>
+    </div>
+    <footer>
+
+              <p>Copyright &nbsp;&copy; Fitness Freak. All Rights Reserved.</p>
+
+        </footer>
+</body>
+</html>

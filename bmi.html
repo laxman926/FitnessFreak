@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bmi.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/bmi.js"></script>
+</head>
+
+<body >
+  <header id="head">
+    <h1>FIT FREAK</h1>
+  </header>
+  <nav class="topnav">
+
+    <a class="active" href="index.html">Home</a>
+    <a href="bmi.html">BMI Calculator</a>
+    <a href="calorie.html">Calories Calculator</a>
+    <a href="stopwatch.html">Stop Watch</a>
+<a href="signup.html">SignUp</a>
+
+
+  </nav>
+  <div id="wrapper">
+    <h1>BMI Calculator</h1>
+    <h2>Weight(lbs)</h2>
+    <input id=weight type=number value=0 oninput=slider.value=value;bmi()>
+    <input id=slider type=range min=0 max=650 value=0 oninput=weight.value=value;bmi()>
+    <h2>Height </h2>
+    <h3>Feet</h3>
+    <input id=feet type=number value=0 onchange=bmi()>
+    <h3>Inches</h3>
+    <input id=inches type=number value=0 onchange=bmi()>
+    <output></output>
+  </div>
+  <h2 class="font">BMI CALCULATOR</h2>
+  <blockquote class="font">&#x2022; Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.<br>
+    &#x2022; Open BMI CALCULATOR page and adjust the Weight(lbs) Value.
+  </blockquote>
+
+  <h2 class="font">CALORIES CALCULATOR</h2>
+  <blockquote class="font">&#x2022; The Calorie Calculator can be used to estimate the number of calories a person needs to consume each day. This calculator can also provide some simple guidelines for gaining or losing weight.<br>
+    &#x2022; Open CALORIES CALCULATOR page and submit the credentials.
+  </blockquote>
+  <h2 class="font">STOPWATCH</h2>
+  <blockquote class="font">&#x2022; Online stopwatch with start, stop/pause, lap and reset functions. Easy to use and accurate stopwatch with lap time.<br>
+    &#x2022; Open STOPWATCH page and use it for your Fitness regimes.
+  </blockquote>
+  <footer>
+
+  <p>Copyright &nbsp;&copy; Fitness Freak. All Rights Reserved.</p>
+
+  </footer>
+
+</body>
+
+</html>
